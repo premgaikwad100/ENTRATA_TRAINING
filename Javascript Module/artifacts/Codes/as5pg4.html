@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+
+	function lgn()
+	{
+		with(document.forms.f1)
+		{
+			var u=(t1.value).toLowerCase()
+			var p=(t2.value).toLowerCase()
+			if(u=="prem" && p=="prem@123")
+			{	
+				alert("correct password")
+			}
+			<!-- else if(u!="prem") -->
+			<!-- alert("username is wrong") -->
+			else 
+			{
+				alert("password is wrong")
+			}
+		}
+	}
+</script>
+</head>
+
+<body>
+<form name="f1" method="post">
+Enter username:
+<input type="text" name="t1"><br>
+Password:
+<input type="text" name="t2">
+Login:
+<input type="button" name="b1" value="Login" onclick="lgn()">
+</form>
+</body>
+</html>

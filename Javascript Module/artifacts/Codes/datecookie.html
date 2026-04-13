@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function crk()
+{
+	var now = new Date(); 
+	now.setMonth(now.getMonth()+1);
+	var cookievalue=username.value
+	document.cookie="username="+cookievalue+";expires="+now.toUTCString();
+	
+	
+}
+
+</script>
+</head>
+<body>
+<form name="f1">
+<input type="button" value="chng date cookie" onclick="crk()">
+</form>
+</body>
+</html>
+
+<!-- if you want to delte cookie than you can minus monyh -->

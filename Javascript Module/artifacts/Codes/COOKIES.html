@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Cookie Example</title>
+    <script>
+      function setCookie() {
+        document.cookie =
+          "username=Prem; expires=Fri, 31 Dec 2026 12:00:00 UTC; path=/";
+        alert("Cookie set successfully");
+      }
+
+      function getCookie() {
+        alert("Stored Cookie: " + document.cookie);
+      }
+
+      function deleteCookie() {
+        document.cookie =
+          "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+        alert("Cookie deleted successfully");
+      }
+    </script>
+  </head>
+  <body>
+    <h2>JavaScript Cookie Example</h2>
+
+    <button onclick="setCookie()">Set Cookie</button>
+    <button onclick="getCookie()">Get Cookie</button>
+    <button onclick="deleteCookie()">Delete Cookie</button>
+  </body>
+</html>

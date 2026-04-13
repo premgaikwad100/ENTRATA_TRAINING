@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+
+function check()
+{
+	with(document.forms.f1)
+	{
+	var str=t1.value
+	var str1=str.replace("pune","karad")
+	document.write(str1)
+	<!-- if(p.test(str)) -->
+	<!-- { -->
+		<!-- document.write("doesnt content digits") -->
+	<!-- } -->
+	<!-- else -->
+		
+		<!-- document.write("content digits") -->
+    <!-- } -->
+	}
+}
+
+
+</script>
+</head>
+<body>
+<form name="f1">
+<input type="text" name="t1">
+<input type="button" value="check" onclick="check()">
+</form>
+</body>
+</html>

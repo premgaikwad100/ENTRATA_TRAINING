@@ -1,0 +1,53 @@
+function calling inside function 
+function returning value
+
+
+
+
+Stirng can be declared in two types 
+1. var c="prem"
+2. var r = new String("prem")
+same in array 
+var a = [1,2,3,4]
+var a = new Array(1,2,3,4)
+
+
+
+reset 
+<input type="reset" value="reset">   all data will be clear 
+submit
+<input type="submit" value="submit">	all data will be submitted
+
+
+form events
+1.onsubmit
+2.onreset
+3.onchange
+4.onselect
+5.onblur
+6.onfocus
+7.onload
+8.onunload
+
+
+
+textarea attribut rols="20" cols="10" 
+<textarea name="t1"> no need to write inpput type 
+
+select 
+<select name="example">
+<option value="1">hii</option>
+<option value="2">hello</option>
+</select>
+
+oncontextmenu="f1()"
+event is used for right clicked
+
+if you want to change simple text than create <p id="text1"> hiiiiiii </p>
+then var i= document.getElementById("text1").innerHTML="hellllooooo"
+
+function of reg 
+1.compile
+2.test
+3.exec
+4.toString

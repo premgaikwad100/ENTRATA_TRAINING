@@ -1,0 +1,20 @@
+<html>
+<body>
+<script>
+	var a = parseInt(prompt("enter any number"))
+	var flag=0
+	for(var i=2;i<a/2;i++)
+	{
+		if(a%i==0)
+		{
+			flag++
+			break
+		}	
+	}
+	if(flag==0)
+		alert("enter number is prime")
+	else
+		alert("enter no is not prime")
+</script>
+</body>
+</html>		

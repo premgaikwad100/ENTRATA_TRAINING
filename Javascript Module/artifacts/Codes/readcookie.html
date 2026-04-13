@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function crk()
+{
+	var cookies = document.cookie
+	var cookiesarray=cookies.split("=")
+	document.write(cookiesarray[0]+" is ")
+
+	document.write(cookiesarray[1])
+}
+
+</script>
+</head>
+<body>
+<form name="f1">
+
+<input type="button" value="read cookie" onclick="crk()">
+</form>
+</body>
+</html>

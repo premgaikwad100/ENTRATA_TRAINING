@@ -1,0 +1,33 @@
+<html>
+<head>
+	<script>
+	function rv()
+	{
+		with(document.forms.f1)
+		{
+			im.src="jerry.jpg";
+			im.height=500;
+			im.width=300;
+		}
+	}
+	
+	function ro()
+	{
+		with(document.forms.f1)
+		{
+			im.src="dore.jpg";
+			im.height=200;
+			im.width=100;
+		}
+	}
+	</script>
+</head>
+<body>
+	<form name="f1" method="post">
+	<img src="dore.jpg" name="im" height="500" width="300" onmouseover="rv()" onmouseout="ro()"><br><br><br>
+	<input type="text" value="Hii" font-size="20px" onmouseover="value='Hello'" onmouseout="value='Hii'">
+
+	</form>
+</body>
+</html>
+	

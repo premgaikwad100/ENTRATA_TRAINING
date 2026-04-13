@@ -1,0 +1,45 @@
+<html>
+<body>
+<script>
+var str="preme"
+var str1="gaikwad"
+document.write(str+str1)
+document.write("<br>")
+document.write(str.concat(str1))
+document.write("<br>")
+document.write("char at:"+str.charAt(2))
+document.write("<br>")
+document.write("index of:"+str.indexOf("e"))
+document.write("<br>")
+document.write("index of from 3rd postion :"+str.indexOf("e",3))
+
+var str3="bhagyesh-gaikwad"
+var a=str3.split("-")
+document.write("<br>")
+document.write(a[0])
+document.write("<br>")
+document.write(a[1])
+
+document.write("<br>")
+document.write("substring="+str1.substring(3))
+document.write("<br>")
+document.write("substring="+str1.substring(1,4))
+
+document.write("<br>")
+document.write("substr="+str1.substr(3))
+document.write("<br>")
+document.write("substr ="+str1.substr(1,4))  
+<!-- it has length and substring has end index -->
+
+
+<!-- toUpperCase -->
+<!-- toLowerCase -->
+document.write("<br>")
+document.write("char code="+str1.charCodeAt(2))
+document.write("<br>")
+document.write("from char code="+String.fromCharCode(115))
+
+<!-- here String need to call with from cahr code upside -->
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+	<script>
+	Banners= new Array('dore.jpg','jerry.jpg','ad.jpg');
+	BannerLink= new Array('google.co.in','msbte.co.in','youtube.com')
+	CurrentBanners=0
+	numofbanners=Banners.length
+	function LinkBanner()
+	{
+		document.location.href="http://www."+BannnerLink[CurrentBanners]
+	}
+	function disbanner()
+	{
+		if(document.images)
+		{
+			CurrentBanners++
+			
+				if(CurrentBanners=numofbanners)
+				{
+					CurrentBanners=0
+				}
+				document.RotateBanners.src=Banners[CurrentBanners]
+				setTimeout("disbanner()",5000);
+		}
+	}
+	</script>
+</head>
+<body onload="disbanner()">
+	<center>
+	<a href="javascript:LinkBanner()"><img src="ambani.jpg" width="200" heigth="200" name="RotateBanners">
+	</a>
+	</center>
+</body>
+</html>
+	
+
+	

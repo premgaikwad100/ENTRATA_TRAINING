@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+	function disp()
+	{
+		with(document.forms.f1)
+		{
+			if(t1.value.length>0 && p1.value.length>0 && (g1.value=='m' || g1.value=='f') && email.value.length>0)
+			{
+				submit()
+				{
+				 alert("submitted")
+				 }
+			}
+			
+		}
+	}	
+</script>
+</head>
+<body>
+<form name="f1" method="post">
+User name:
+<input type="text" name="t1" onblur="disp()" ><br><br>
+password:
+<input type="password" name="p1" onblur="disp()"><br><br>
+select gender:
+<input type="radio" name="g1" value="m">Male
+<input type="radio" name="g1" value="f">Female<br>
+email:
+<input type="text" name="email" onblur="disp()"><br><br>
+<br>
+</form> 
+</body>
+</html>

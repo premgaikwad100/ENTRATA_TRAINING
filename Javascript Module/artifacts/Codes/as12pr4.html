@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script>
+	function rv()
+	{
+		with(document.forms.f1)
+		{
+			im.height=500;
+			im.width=500;
+		}
+	}
+	
+	function ro()
+	{
+		with(document.forms.f1)
+		{
+			im.height=200;
+			im.width=200;
+		}
+	}
+	</script>
+</head>
+<body>
+	<form name="f1" method="post">
+	<img src="dore.jpg" name="im" height="200" width="200" onmouseover="rv()" onmouseout="ro()">
+	</form>
+</body>
+</html>
+	

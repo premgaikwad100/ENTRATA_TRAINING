@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+var mywin
+function openwin()
+{
+	mywin=window.open("" ,"","left=100,top=100,width=100,height=100")
+	mywin.focus()
+}
+
+function delwin()
+{
+		mywin.close()
+}		
+</script>
+</head>
+<body>
+<form name="f1">
+<input type="button" value="openwin" onclick="openwin()">
+<input type="button" value="delwin" onclick="delwin()">
+</form>
+</body>
+</html>

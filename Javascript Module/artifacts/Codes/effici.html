@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>More Efficient Rollover</title>
+<script language="Javascript" type="text/javascript">
+<!--
+mobile = new Image
+computer = new Image
+iphone = new Image
+if (document.images) 
+{
+	mobile.src = 'mobile.jpg'
+	computer.src = 'computer.jpg'
+	iphone.src = 'index.jpg'
+}
+else {
+
+}
+-->
+</script>
+</head>
+<body>
+
+<a>
+<IMG height="92" src="mobile.jpg" width="200" border="120" name="cover">
+</a>
+
+<IMG height="1" src="" width="10">
+
+<A onmouseover= "document.cover.src=mobile.src">
+<B><U>Mobile</U></B>
+</A>
+<BR>
+<A onmouseover= "document.cover.src=computer.src">
+<B><U>Computer</U></B>
+</A>
+<BR>
+<A onmouseover= "document.cover.src=iphone.src">
+<B><U>iphone</U></B>
+</A>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<html>
+<body>
+<script>
+var a = [10,20,30,40,50]
+for(var i=0;i<5;i++)
+{
+	document.write(" "+a[i])
+
+}
+
+
+a.unshift(5,7,9)
+
+
+document.write("<br>")
+document.write("unshift")
+for(var i=0;i<5;i++)
+{
+	document.write(" "+a[i])
+
+}
+
+
+
+a.push(70,90,110)
+
+
+document.write("<br>")
+document.write("push")
+for(var i=0;i<a.length;i++)
+{
+	document.write(" "+a[i])
+
+}
+
+
+a.sort()
+
+a.reverse()
+
+var jn=a.join("*")
+
+document.write("<br>")
+document.write("join")
+document.write(" "+jn)
+
+var cn = a.concat()
+document.write("<br>")
+document.write("concat")
+document.write(" "+cn)
+
+
+a.shift()
+
+
+document.write("<br>")
+document.write("shift")
+for(var i=0;i<a.length;i++)
+{
+	document.write(" "+a[i])
+
+}
+
+
+a.pop()
+
+
+document.write("<br>")
+document.write("pop")
+for(var i=0;i<a.length;i++)
+{
+	document.write(" "+a[i])
+
+}
+
+
+a.splice(5,0,"hello")
+
+
+document.write("<br>")
+document.write("splice")
+for(var i=0;i<a.length;i++)
+{
+	document.write(" "+a[i])
+
+}
+
+
+a.splice(8)
+
+
+document.write("<br>")
+document.write("splice for deleting")
+for(var i=0;i<a.length;i++)
+{
+	document.write(" "+a[i])
+
+}
+
+
+
+</script>
+</body>
+</html>	

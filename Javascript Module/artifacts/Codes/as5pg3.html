@@ -1,0 +1,51 @@
+<html>
+<head>
+<script>
+ function op()
+ {
+ 		var a=parseInt(document.forms.f1.t1.value)
+		var b=parseInt(document.forms.f1.t2.value)
+		
+	with(document.forms.f1)
+	{
+
+		switch(t3.value)
+		{
+			case '+':
+					t4.value= a + b
+					break;
+
+			case '-':
+					t4.value= a - b
+					break;
+					
+			case '/':
+					t4.value= a / b
+					break;
+					
+			case '*':
+					t4.value= a * b
+					break;					
+					
+			default:document.write("you have entered wrong number")
+					break;
+		}
+	}
+}
+</script>
+					
+</head>
+<body>
+<form name="f1" method="post" action="">
+	enter first number:
+	<input type ="text" name="t1"><br>
+	enter second number:
+	<input type ="text" name="t2"><br>
+	Select operator you want(/,*,+,-)
+	<input type ="text" name="t3"><br>
+	result:
+	<input type ="text" name="t4"><br>
+	<input type ="button" name="b1" value="submit" onclick="op()">
+</form>
+</body>
+</html>

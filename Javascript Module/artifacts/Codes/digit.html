@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+var p=/\d/
+function check()
+{
+	with(document.forms.f1)
+	{
+	var str=t1.value
+	if(p.test(str))
+	{
+		document.write("content digits")
+	}
+	else
+		document.write("doesnt content digits")
+    }
+}
+
+
+</script>
+</head>
+<body>
+<form name="f1">
+<input type="text" name="t1">
+<input type="button" value="check" onclick="check()">
+</form>
+</body>
+</html>

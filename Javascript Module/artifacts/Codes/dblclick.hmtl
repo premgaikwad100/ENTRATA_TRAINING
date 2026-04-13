@@ -1,0 +1,15 @@
+<html>
+<head>
+<script>
+function f1()
+{
+ alert("double click")
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<input type="submit" ondblclick="f1()">
+</form>
+</body>
+</html>

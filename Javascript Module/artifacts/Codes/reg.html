@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script>
+	function ch()
+	{
+	with(document.forms.f1)
+	{
+		var str=t1.value;
+		var reg=/\bkarad\b/
+		var rtxt=str.replace(reg,'pune');
+		document.write(rtxt)
+	}
+	}
+	</script>
+	<body>
+	<form name="f1">
+	<input type="text" name="t1">
+	<input type="button" value="siub" onclick="ch()">
+	</form>
+	</body>
+	</html>
+	
+		

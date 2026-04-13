@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function display()
+{
+	with(document.forms.f1)
+	{
+	alert("calue="+elements[0].value+elements[1].value+elements[2].value)
+	}
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<input type="text" name="t1">	
+<input type="text" name="t2">	
+<input type="text" name="t3">
+<input type="button" name="b1" value="babu" onclick="display()">
+</form>
+</body>
+</html>	

@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+function fn()
+{
+	with(document.forms.f1)
+	{
+		if(c1.checked==true)
+		{
+			alert("you selected oop")
+		}
+		if(c2.checked==true)
+			{
+		alert("you selected oop")
+		}
+	}	
+</script>
+</head>
+<body>
+<form name="f1">
+<input type="checkbox" name="c1" value="oop">oop<br>
+<input type="checkbox" name="c2" value="oop">oop<br>
+<input type="button" value="bbb" onclick="fn()">
+</form>
+</body>
+</html>

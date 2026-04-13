@@ -1,0 +1,47 @@
+<html>
+<head>
+<script>
+   function OGame()
+   {
+      with(document.forms.f12)
+      {
+	    s1[0].value=1
+		s1[0].text="football"
+		
+		s1[1].value=2
+		s1[1].text="Base-ball"
+	  }	
+	  
+	  
+	} 
+
+   function IGame()
+   {
+      with(document.forms.f12)
+      {
+	    s1[0].value=1
+		s1[0].text="chess"
+		
+		s1[1].value=2
+		s1[1].text="carrom"
+	  }	
+	  
+	  
+	}  	
+	  
+	  
+</script>
+</head>
+<body>
+<form name="f12" action="" method="post">
+<input type="radio" name="c1" value="indoor game" checked="true" onclick="IGame()"> indoor game<br>
+<input type="radio" name="c1" value="outdoor game" onclick="OGame()">outdoor game<br>
+
+<select name="s1">
+<option >chess</option>
+<option >carrom</option>
+
+</select>
+</form>
+</body>
+</html>
