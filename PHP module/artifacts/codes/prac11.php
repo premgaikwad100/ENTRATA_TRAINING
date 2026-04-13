@@ -1,0 +1,11 @@
+<html>
+<body>
+	<form name="f1" action"setcookie.php" method="post">
+	Enter Username:<input type="text" name="username">	
+	<br>
+	Enter Password:<input type="password" name="password">	
+	<br>
+	<input type="submit" name="btn">
+	</form>
+</body>
+</html>

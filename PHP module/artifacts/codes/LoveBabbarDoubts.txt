@@ -1,0 +1,16 @@
+Lec 5 code
+ 
+#include<iostream>
+using namespace std;
+int main()
+{
+    for(int i=0;i<=15;i+=2)
+    {
+        cout<<i<<" ";
+        if(i&1)          //what is working of this doubt
+        {
+            continue;
+        } 
+        i++;
+    }
+}

@@ -1,0 +1,22 @@
+<?php
+$flag=0;
+$no=3;
+for($no=3;$no<100;$no++)
+{
+for($i=2;$i<$no;$i++)
+{
+	if($no%$i==0)
+	{
+		$flag=1;
+	}
+	else
+	{
+		$flag=0;
+	}
+}
+if($flag==1)
+{
+echo "$no";
+}
+}
+?>	
